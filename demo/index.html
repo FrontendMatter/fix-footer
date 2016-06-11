@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stick that footer!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/themekit/fix-footer/master/dist/fix-footer.css">
+  <style>
+    html {
+      line-height: 1.5;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    * {
+      box-sizing: inherit;
+    }
+    body {
+      background-color: #eee;
+      margin: 0; 
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .lead {
+      font-size: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    #content {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    #sample {
+      color: #818181;
+    }
+    footer {
+      background-color: #d1d1d1;
+      color: #686868;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Stick that footer!</h1>
+    <p class="lead">
+      Sticks the footer to the bottom of the screen, only when the page is smaller than the viewport on medium to large screen sizes. Resize the window height to see it in action. <br>
+      <a href="https://github.com/themekit/fix-footer">https://github.com/themekit/fix-footer</a>
+    </p>
+    
+    <div id="sample">
+      <h3>Sample content</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis labore distinctio, minima vero veniam exercitationem cum tempora perspiciatis voluptatibus est minus reprehenderit placeat laudantium reiciendis. Doloremque consequuntur dolore sint distinctio assumenda dicta vitae magni perferendis, non odit dignissimos qui nisi, explicabo laudantium reprehenderit libero optio natus! Iste, recusandae, deleniti possimus vitae necessitatibus maxime omnis vero, eum autem error inventore. Sunt commodi laborum, omnis neque, fugit quis deleniti impedit repellendus natus, tenetur aliquam possimus voluptatibus molestiae porro alias qui provident numquam recusandae dolorem necessitatibus delectus nisi ipsa odio facilis! Tenetur perferendis quisquam eaque quasi fuga pariatur voluptate, totam consequatur, quam excepturi officiis voluptatum aspernatur quae ipsa esse? Enim adipisci unde error impedit asperiores commodi et voluptate perferendis dolores provident sed totam tempora, blanditiis excepturi soluta repellat, fugit odio quos temporibus debitis facere earum iure velit quaerat corrupti! Pariatur quidem accusamus consectetur tenetur ad, velit excepturi illum id debitis, aliquam, perferendis!</p>
+    </div>
+  </div>
+
+  <footer class="fix-js-footer">
+    Copyright &copy; 2016 - Sample footer
+  </footer>
+
+  <script src="https://cdn.rawgit.com/themekit/dom-factory/master/dist/dom-factory.js"></script>
+  <script src="https://cdn.rawgit.com/themekit/fix-footer/master/dist/fix-footer.js" async defer></script>
+</body>
+</html>

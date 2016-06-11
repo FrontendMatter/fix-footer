@@ -1,0 +1,55 @@
+{
+  "name": "fix-footer",
+  "version": "1.0.0",
+  "description": "Stick that footer!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config build/webpack.config.dev.js --progress --watch",
+    "build": "NODE_ENV=production webpack --config build/webpack.config.production.js --progress",
+    "build-dev": "webpack --config build/webpack.config.dev.js --progress",
+    "deploy": "surge ./demo"
+  },
+  "main": "dist/fix-footer.js",
+  "author": "Laza Bogdan <laza.bogdan@macro-net.ro>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^5.8.34",
+    "css-loader": "^0.23.0",
+    "eslint": "^1.10.3",
+    "eslint-loader": "^1.2.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.1",
+    "sass-importer-npm": "^1.0.2",
+    "sass-loader": "^3.1.2",
+    "style-import-loader": "^0.2.0",
+    "style-loader": "^0.13.0",
+    "surge": "^0.18.0",
+    "themekit-webpack-config": "^1.1.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.11"
+  },
+  "peerDependencies": {
+    "dom-factory": "^1.0.0-alpha.2"
+  },
+  "keywords": [
+    "fix",
+    "footer",
+    "sticky",
+    "fixed"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themekit/fix-footer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themekit/fix-footer/issues"
+  },
+  "homepage": "https://github.com/themekit/fix-footer#readme"
+}
